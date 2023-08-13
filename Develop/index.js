@@ -11,57 +11,57 @@ const questions = [
     {
         type: 'input',
         message: 'What is your title of your project',
-        name: 'Title',
+        name: 'title',
     },
     {
         type: 'input',
         message: 'What is your project about',
-        name: 'Description',
+        name: 'description',
     },
     {
         type: 'input',
         message: 'What is your installation?',
-        name: 'Installation',
+        name: 'installation',
     },
     {
         type: 'input',
         message: 'What is your usage?',
-        name: 'Usage',
+        name: 'usage',
     },
     {
         type: 'list',
         message: 'What is your license?',
-        name: 'License',
-        choices: ['None', 'MIT', 'IBM', 'Apachenod'],
+        name: 'license',
+        choices: ['None', 'MIT', 'IBM', 'Apache'],
     },
     {
         type: 'input',
         message: 'What is your contribution',
-        name: 'Contribution',
+        name: 'contribution',
     },
     {
         type: 'input',
         message: 'What is your test?',
-        name: 'Test',
+        name: 'test',
     },
     {
         type: 'input',
         message: 'What is your github url?',
-        name: 'Github',
+        name: 'github',
     },
     {
         type: 'input',
         message: 'What is your email?',
-        name: 'Email',
+        name: 'email',
     },
 ];
 // ];
 
 // Create a function to write README file
 function writeToFile(data) {
-    const filename = "exampleREADME.md";
+    const filename = "testREADME.md";
 
-    fs.writeFile('exampleREADME.md', data, function (err) {
+    fs.writeFile('testREADME.md', data, function (err) {
         err ? console.log(err) : console.log(filename + "created!")
     });
 }
